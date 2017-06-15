@@ -1890,7 +1890,7 @@
                 </field>
             </group>
         </section>
-        <section id="porto_license" translate="label" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+        <section id="porto_license" translate="label" sortOrder="30" showInDefault="0" showInWebsite="0" showInStore="0">
             <label>Activate Theme</label>
             <tab>smartwave_porto</tab>
             <resource>Smartwave_Porto::config</resource>
