@@ -12,7 +12,7 @@
       "magento/module-ui": "100.*",
       "magento/module-variable": "100.*",
       "magento/module-media-storage": "100.*",
-      "magento/framework": "100.1.*",
+      "magento/framework": "100.*",
       "magento/magento-composer-installer": "*"
     },
     "type": "magento2-module",
