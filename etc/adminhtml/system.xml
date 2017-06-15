@@ -7,7 +7,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="smartwave_porto" translate="label" sortOrder="50">
+        <tab id="smartwave_porto" translate="label" sortOrder="500">
             <label>Porto 2.6.0</label>
         </tab>
         <section id="porto_settings" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
