@@ -3,6 +3,7 @@
     "description": "Smartwave Porto Theme",
     "require": {
       "php": "~5.5.0|~5.6.0|~7.0.0",
+      "smartwave/module-core": "*",
       "magento/module-store": "100.*",
       "magento/module-theme": "100.*",
       "magento/module-widget": "100.*",
