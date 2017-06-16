@@ -95,7 +95,10 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     public function isLocalhost() {
         $whitelist = array(
             '127.0.0.1',
-            '::1'
+            '::1',
+            '37.120.177.75',
+            '2a03:4000:6:803f::1/64'
+            
         );
         
         return in_array($_SERVER['REMOTE_ADDR'], $whitelist);
