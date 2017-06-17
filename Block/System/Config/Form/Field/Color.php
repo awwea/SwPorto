@@ -22,9 +22,6 @@ class Color extends \Magento\Config\Block\System\Config\Form\Field
         $html = $element->getElementHtml();
         $cpPath = $base.'pub/media/js/';
         if(!$this->_coreRegistry->registry('colorpicker_loaded')) {
-            $html .= '<script type="text/javascript">require(["jquery","Smartwave_Porto/js/jscolor"], function ($) {});</script>
-            
-            <style type="text/css">input.jscolor { background-image: url(js/color.png) !important; background-position: calc(100% - 8px) center; background-repeat: no-repeat; padding-right: 44px !important; } input.jscolor.disabled,input.jscolor[disabled] { pointer-events: none; }</style>';
             $this->_coreRegistry->registry('colorpicker_loaded', 1);
         }
         $html .= '<script type="text/javascript">
