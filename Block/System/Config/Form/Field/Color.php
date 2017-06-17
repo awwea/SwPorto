@@ -22,6 +22,7 @@ class Color extends \Magento\Config\Block\System\Config\Form\Field
         $html = $element->getElementHtml();
         $cpPath = $base.'pub/media/js/';
         if(!$this->_coreRegistry->registry('colorpicker_loaded')) {
+            $html .= '<!-- moved to head-->';
             $this->_coreRegistry->registry('colorpicker_loaded', 1);
         }
         $html .= '<script type="text/javascript">
