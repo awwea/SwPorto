@@ -1,5 +1,5 @@
 /**
- * EvEmitter v1.1.0
+ * EvEmitter v1.0.1
  * Lil' event emitter
  * MIT License
  */
@@ -8,7 +8,7 @@
 
 ( function( global, factory ) {
   // universal module definition
-  /* jshint strict: false */ /* globals define, module, window */
+  /* jshint strict: false */ /* globals define, module */
   if ( typeof define == 'function' && define.amd ) {
     // AMD - RequireJS
     define( factory );
@@ -20,7 +20,7 @@
     global.EvEmitter = factory();
   }
 
-}( typeof window != 'undefined' ? window : this, function() {
+}( this, function() {
 
 "use strict";
 
@@ -53,8 +53,8 @@ proto.once = function( eventName, listener ) {
   // set once flag
   // set onceEvents hash
   var onceEvents = this._onceEvents = this._onceEvents || {};
-  // set onceListeners object
-  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || {};
+  // set onceListeners array
+  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || [];
   // set flag
   onceListeners[ listener ] = true;
 
@@ -102,12 +102,6 @@ proto.emitEvent = function( eventName, args ) {
   }
 
   return this;
-};
-
-proto.allOff =
-proto.removeAllListeners = function() {
-  delete this._events;
-  delete this._onceEvents;
 };
 
 return EvEmitter;
