@@ -45,6 +45,6 @@ class Header extends \Magento\Config\Model\Config\Backend\Image
      */
     protected function _getAllowedExtensions()
     {
-        return ['jpg', 'jpeg', 'gif', 'png'];
+        return ['jpg', 'jpeg', 'gif', 'png', 'svg'];
     }
 }
