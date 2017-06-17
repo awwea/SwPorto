@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="smartwave_porto" translate="label" sortOrder="509">
-            <label>Theme Config (2.6.0)</label>
+            <label>Theme Configuration (2.6.0)</label>
         </tab>
         <section id="porto_settings" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Porto - Settings Panel</label>
@@ -17,7 +17,7 @@
             <group id="general" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
                 <field id="boxed" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Boxed / Wide</label>
+                    <label>Boxed/Wide</label>
                     <source_model>Smartwave\Porto\Model\Config\Settings\General\Boxed</source_model>
                 </field>
                 <field id="boxed_bg_color" translate="label comment" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -1839,7 +1839,7 @@
                 </field>
                 <field id="page_bg_image" translate="label" type="image" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Background Image</label>
-                    <comment>Allowed file types:PNG, GIF, JPG, JPEG.</comment>
+                    <comment>Allowed file types:PNG, GIF, JPG, JPEG, SVG.</comment>
                     <backend_model>Smartwave\Porto\Model\Config\Backend\Image\Page</backend_model>
                     <base_url type="media" scope_info="1">porto/page_bg</base_url>
                     <depends>
@@ -1872,7 +1872,7 @@
                 </field>
                 <field id="main_bg_image" translate="label" type="image" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Background Image</label>
-                    <comment>Allowed file types:PNG, GIF, JPG, JPEG.</comment>
+                    <comment>Allowed file types:PNG, GIF, JPG, JPEG, SVG.</comment>
                     <backend_model>Smartwave\Porto\Model\Config\Backend\Image\Main</backend_model>
                     <base_url type="media" scope_info="1">porto/main_bg</base_url>
                     <depends>
