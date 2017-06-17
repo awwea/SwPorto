@@ -59,7 +59,7 @@ class Generator
         try {
             $block = $this->_layoutManager->createBlock('Smartwave\Porto\Block\Template')->setData('area','frontend')->setTemplate($str4)->toHtml();
             if(!file_exists($this->_cssconfigData->getCssConfigDir())) {
-                @mkdir($this->_cssconfigData->getCssConfigDir(), 0777);
+                @mkdir($this->_cssconfigData->getCssConfigDir(), 0775);
             }
             $file = @fopen($str3,"w+");
             @flock($file, LOCK_EX);
